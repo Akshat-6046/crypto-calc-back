@@ -1,4 +1,5 @@
 const express = require("express");
+
 require('dotenv').config();
 const app = express();
 const port = process.env.PORT;  //  // from env variables - server port
@@ -25,3 +26,5 @@ app.use("/get_currency_list", getCurrencyList); // list currencies
 app.listen(port, () => {
   console.log(`Server running at port: ${port}`);
 });
+
+
